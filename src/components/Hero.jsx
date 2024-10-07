@@ -25,8 +25,8 @@ const Hero = () => {
             </h1>
 
             <p className={`${styles.heroSubText} mt-3 text-slate-100`}>
-              I specialize in building responsive, user-friendly web applications,<br className="sm:block hidden" />
-              focusing on designing efficient APIs, database structures, and <br className="sm:block hidden" />
+              I specialize in building responsive, user-friendly web <br className="sm:block hidden" /> applications,
+              focusing on designing efficient APIs, <br className="sm:block hidden" /> database structures, and 
               deploying applications to various platforms.
             </p>
           </div>
