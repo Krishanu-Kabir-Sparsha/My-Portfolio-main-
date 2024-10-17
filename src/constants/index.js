@@ -23,7 +23,21 @@ import {
     jobit,
     tripguide,
     threejs,
+    mah,
+    ghit,
+    ct,
+    outlier,
+    iub,
+    dc,
+    mgbs,
+    canva,
+    express,
+    bootstrap,
+    spring,
+    
   } from "../assets";
+
+
   
   export const navLinks = [
     {
@@ -73,24 +87,24 @@ import {
       icon: javascript,
     },
     {
-      name: "TypeScript",
-      icon: typescript,
+      name: "Tailwind CSS",
+      icon: tailwind,
+    },
+    {
+      name: "Bootstrap",
+      icon: bootstrap,
     },
     {
       name: "React JS",
       icon: reactjs,
     },
     {
-      name: "Redux Toolkit",
-      icon: redux,
-    },
-    {
-      name: "Tailwind CSS",
-      icon: tailwind,
-    },
-    {
       name: "Node JS",
       icon: nodejs,
+    },
+    {
+      name: "Express JS",
+      icon: express,
     },
     {
       name: "MongoDB",
@@ -101,73 +115,117 @@ import {
       icon: threejs,
     },
     {
+      name: "TypeScript",
+      icon: typescript,
+    },
+    {
+      name: "Spring Boot",
+      icon: spring,
+    },
+    {
       name: "git",
       icon: git,
     },
+    // {
+    //   name: "Redux Toolkit",
+    //   icon: redux,
+    // },
     {
-      name: "figma",
-      icon: figma,
-    },
-    {
-      name: "docker",
-      icon: docker,
+      name: "canva",
+      icon: canva,
     },
   ];
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
+      title: "Software Engineer (AI Training Data)",
+      company_name: "Outlier.AI",
+      icon: outlier,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "October 2024 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
+        "Reviewing of AI training data.",
+        "Projects based in JavaScript and Python.",       
         "Participating in code reviews and providing constructive feedback to other developers.",
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
+      title: "Enterprise Resource Planning Operations Officer",
+      company_name: "Mir Akhter Hossain Ltd.",
+      icon: mah,
       iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      date: "October 2023 - February 2024",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Developing and maintaining web applications",
+        "An accomplished ERP Operation Officer proficient in ODOO modules", 
+        "A focus on Master Requisitions, vendor management, and project coordination.",
+        "Proven ability to enhance requisition processes, collaborate cross-functionally in ODOO development.",
       ],
     },
     {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
+      title: "Software Engineer Trainee",
+      company_name: "Golden Harvest Infotech Ltd.",
+      icon: ghit,
+      iconBg: "#383E56", //"#E6DEDD"
+      date: "February 2023 - May 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Developing and maintaining CRUD Operations",
+        "contributing as a Software Engineer Trainee within the Fintech team",
+        "A primary role in enhancing an existing Transactional  Middleware software by developing APIs",
+        "Integrating various working systems using the Spring Boot framework.",
+      ],
+    },
+    {
+      title: "MERN Stack Developer",
+      company_name: "Coders Trust Bangladesh",
+      icon: ct,
+      iconBg: "#383E56",
+      date: "April 2024 - December 2024",
+      points: [
+        "Development Training",
+        "Developing and maintaining web applications using React.js and other related technologies.", 
+        "Implementing responsive design and ensuring cross-browser compatibility.",      
+        "Efficiency with MERN Stack approach",
+        "Full Stack Web Development. Responsive Front-End and Agile Backend.",
       ],
     },
   ];
+
+
+  const educations = [
+    {
+      title: "BSc. in Computer Science and Engineering",
+      institution_name: "Independent University Bangladesh (IUB)",
+      icon: iub,
+      iconBg: "#383E56",
+      date: "2018 - 2023",
+      points: [
+        "CGPA: 2.66 / 4.00",
+      ],
+    },
+    {
+      title: "Higher Secondary Certificate",
+      institution_name: "Dhaka College",
+      icon: dc,
+      iconBg: "#383E56",
+      date: "2015 - 2017",
+      points: [
+        "GPA: 5.00 / 5.00",
+      ],
+    },
+    {
+      title: "Secondary School Certificate",
+      institution_name: "Motijheel Government Boys' High School",
+      icon: mgbs,
+      iconBg: "#383E56", //"#E6DEDD"
+      date: "Passing year 2015",
+      points: [
+        "GPA: 5.00 / 5.00",
+      ],
+    },
+  ];
+
+
   
   const testimonials = [
     {
@@ -262,4 +320,4 @@ import {
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, experiences, educations, testimonials, projects };

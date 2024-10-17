@@ -7,9 +7,12 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
+import bootstrap from "./tech/bootstrap.png";
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
+import canva from "./tech/canva.svg";
+import express from "./tech/express.webp";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
@@ -20,11 +23,19 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import spring from "./tech/spring.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import mah from "./company/mah.png";
+import ghit from "./company/ghit.png";
+import ct from "./company/CT.png";
+import outlier from "./company/outlier.jpg";
+import iub from "./company/iub.png";
+import dc from "./company/dc.svg";
+import mgbs from "./company/mgbs.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -40,23 +51,34 @@ export {
   menu,
   close,
   css,
+  bootstrap,
   docker,
   figma,
+  canva,
   git,
   html,
   javascript,
   mongodb,
   nodejs,
   reactjs,
+  express,
   redux,
   tailwind,
   typescript,
   threejs,
+  spring,
   meta,
   shopify,
   starbucks,
+  mah,
+  ghit,
+  ct,
+  outlier,
   tesla,
   carrent,
   jobit,
   tripguide,
+  iub,
+  dc,
+  mgbs,
 };
