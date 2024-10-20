@@ -29,11 +29,18 @@ jobs:
           npm install
           npm run build
 
-      - name: 📂 Sync files
-        uses: SamKirkland/FTP-Deploy-Action@4.1.0
+      # Step to test DNS resolution
+      - name: Test DNS resolution
+        run: |
+          nslookup ${{ secrets.ftp_server }}
+
+      # Use SFTP Deploy Action (Option 1)
+      - name: SFTP Deploy
+        uses: easeic/sftp-deploy@v1.0.0
         with:
-          server: ftp.krishanukabir.com
           username: ${{ secrets.ftp_name }}
           password: ${{ secrets.ftp_password }}
-          dangerous-clean-slate: true
-          local-dir: ./dist/
+          host: ${{ secrets.ftp_server }}  # Your server's domain or IP address
+          port: 22  # Default SFTP port, change if necessary
+          local_path: ./dist
+          remote_path: /path/on/server  # Replace with your server's path
