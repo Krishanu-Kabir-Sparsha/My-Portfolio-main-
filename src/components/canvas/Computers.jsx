@@ -1,11 +1,17 @@
-import React, { Suspense, useEffect, useState } from "react";
+import React, { Suspense, useEffect, useState, memo } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
-
 import CanvasLoader from "../Loader";
 
-const Computers = ({ isMobile }) => {
-  const computer = useGLTF("./desktop_pc/scene.gltf");
+// Memoize the Computers component to prevent unnecessary re-renders
+const Computers = memo(({ isMobile }) => {
+  const { scene } = useGLTF("./desktop_pc/scene.gltf", true, (error) => {
+    console.error("Error loading the model", error);
+  });
+
+  if (!scene) {
+    return null; // If the model doesn't load, don't break the canvas
+  }
 
   return (
     <mesh>
@@ -20,34 +26,30 @@ const Computers = ({ isMobile }) => {
       />
       <pointLight intensity={1} />
       <primitive
-        object={computer.scene}
-        scale={isMobile ? 1.1 : 1.7} // Increased scale for better visibility
-        position={isMobile ? [0, -2, -2.2] : [0, -3.25, -1.5]} // Adjusted position
-        rotation={[-0.01, -0.2, -0.1]}
+        object={scene}
+        scale={isMobile ? 1.1 : 1.7} // Scale depending on mobile or not
+        position={isMobile ? [0, -2, -2.2] : [0, -3.25, -1.5]} // Adjust position based on mobile
+        rotation={[-0.01, -0.2, -0.1]} // Slight rotation
       />
     </mesh>
   );
-};
+});
 
 const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    // Add a listener for changes to the screen size
     const mediaQuery = window.matchMedia("(max-width: 700px)");
 
-    // Set the initial value of the `isMobile` state variable
     setIsMobile(mediaQuery.matches);
 
-    // Define a callback function to handle changes to the media query
     const handleMediaQueryChange = (event) => {
       setIsMobile(event.matches);
     };
 
-    // Add the callback function as a listener for changes to the media query
     mediaQuery.addEventListener("change", handleMediaQueryChange);
 
-    // Remove the listener when the component is unmounted
+    // Cleanup the media query event listener on component unmount
     return () => {
       mediaQuery.removeEventListener("change", handleMediaQueryChange);
     };
@@ -58,9 +60,9 @@ const ComputersCanvas = () => {
       frameloop="demand"
       shadows
       dpr={[1, 2]}
-      camera={{ position: [20, 3, 5], fov: 25}}
+      camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
-      className="w-full h-full" // Full width and height of the parent container
+      className="w-full h-full"
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls

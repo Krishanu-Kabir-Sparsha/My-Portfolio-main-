@@ -40,6 +40,11 @@ import mgbs from "./company/mgbs.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import ecomm from "./ecomm.png";
+import movie from "./movie.png";
+import fashion from "./fashion.png";
+
+import resume from "./Resume.pdf";
 
 export {
   logo,
@@ -78,7 +83,11 @@ export {
   carrent,
   jobit,
   tripguide,
+  ecomm,
+  movie,
+  fashion,
   iub,
   dc,
   mgbs,
+  resume,
 };

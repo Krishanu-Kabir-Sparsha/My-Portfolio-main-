@@ -34,6 +34,9 @@ import {
     express,
     bootstrap,
     spring,
+    ecomm,
+    movie,
+    fashion,
     
   } from "../assets";
 
@@ -68,7 +71,7 @@ import {
       icon: backend,
     },
     {
-      title: "Problem Solving",
+      title: "Problem Solver",
       icon: creator,
     },
   ];
@@ -230,93 +233,109 @@ import {
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
+        "Working with Krishanu was an absolute pleasure. His attention to detail and commitment to delivering a high-quality product exceeded all expectations.",
+      name: "Abdullah Al Masum",
+      designation: "CEO",
+      company: "Re-Form Innovations",
+      image: "https://scontent.fdac138-1.fna.fbcdn.net/v/t1.6435-1/164862001_10159182290387457_1542856641175703986_n.jpg?stp=dst-jpg_s200x200&_nc_cat=108&ccb=1-7&_nc_sid=e4545e&_nc_eui2=AeGx1wfoiwfIw0YElN-4a5NOGnjfD3QR2q4aeN8PdBHaruHMfXEIM1WOIvUlJnqoo5ZtRo96zgUWQ8Bm2GxtQ3ya&_nc_ohc=bDupgA72GCYQ7kNvgFKQgpW&_nc_zt=24&_nc_ht=scontent.fdac138-1.fna&_nc_gid=Aoq3nfr5MguOsFOG02oOJ81&oh=00_AYAfszfgfU7lk-DJCXsSUezQ5B-VGvedoE2IIpRSHyN6RA&oe=673BB43E",
     },
     {
       testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
+        "Krishanu truly understands the importance of client success. His innovative solutions transformed our platform and improved overall performance.",
+      name: "Md. Mohsin Kabir",
+      designation: "Principle",
+      company: "Shahid Suhrawardy College",
+      image: "https://scontent.fdac138-1.fna.fbcdn.net/v/t1.6435-9/135821538_3671554142883837_88435631695636992_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=1d70fc&_nc_eui2=AeHI1CV6sXjPq3Ep35YOKdmz5_Nwq7s_LSnn83Cruz8tKSMF6znoM2qL1MYahFyrvFusQ7w-rDCOZ0sK7pmF9SV0&_nc_ohc=csB6xKOpqhEQ7kNvgErpRif&_nc_zt=23&_nc_ht=scontent.fdac138-1.fna&_nc_gid=AjCsMxaZP5YUrqR5hALH6Sm&oh=00_AYBdV4SFVNSu5NMFpi0z4GqbqhV7YiFfTHBWqe0-s_pdaA&oe=673BBCE7",
     },
     {
       testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
+        "Our website’s efficiency skyrocketed after Krishanu optimized it. We saw a dramatic increase in traffic and engagement, thanks to his expertise.",
+      name: "Sadat Kabir",
       designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
+      company: "Golden Harvest Infotech Ltd.",
+      image: "https://scontent.fdac138-2.fna.fbcdn.net/v/t39.30808-1/402115272_10159487822707190_1758733655327737719_n.jpg?stp=dst-jpg_s100x100&_nc_cat=106&ccb=1-7&_nc_sid=0ecb9b&_nc_eui2=AeGAWBYLIQ2H0bglqdJ-DH35kDCmjjivId6QMKaOOK8h3hWK8_goLmwY46wn45GuNhm1cHYeR-rlfueTUr4mxzQx&_nc_ohc=JykT9XPUCXEQ7kNvgGzs24D&_nc_zt=24&_nc_ht=scontent.fdac138-2.fna&_nc_gid=A6IWVrhMZG4VhGpPvEnUVd6&oh=00_AYB7kw-hgEKcEqmV3Ow5fOolID8cSRNPYHtikGDhatZJHw&oe=671A2E9C",
     },
   ];
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "E-Commerce (User Front-End)",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "A 1st level FrontEnd Application where the products are fetched from fakestore API, where an user is able to search for the particular products, view the categories and having purchasing ability with the Stripe payment integration method. ",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "stripe",
           color: "green-text-gradient",
         },
         {
           name: "tailwind",
           color: "pink-text-gradient",
         },
+        {
+          name: "daisyUI",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "fakestore API",
+          color: "yellow-text-gradient",
+        },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: ecomm,
+      source_code_link: "https://github.com/Krishanu-Kabir-Sparsha/React-Shop-App-.git",
     },
     {
-      name: "Job IT",
+      name: "Movie Shop (TMDB)",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "This is a Web Application, Using React for strong FrontEnd. This movie application contained by fetching api from TMDB. Visually stunning and strong animations is featured by using framer motions and NextUI.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "Framer Motion",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "Tailwind",
           color: "pink-text-gradient",
         },
+        {
+          name: "Next UI",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "TMDB",
+          color: "white-text-gradient",
+        },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: movie,
+      source_code_link: "https://github.com/Krishanu-Kabir-Sparsha/Movie-Shop.git",
     },
     {
-      name: "Trip Guide",
+      name: "Fashion Store (Front-End Landing Page)",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "A simple and comprehensive landing page just using the basics. It is a beginner friendly FrontEnd Project.",
       tags: [
         {
-          name: "nextjs",
+          name: "HTML",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "Tailwind",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "JavaScript",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: fashion,
+      source_code_link: "https://github.com/Krishanu-Kabir-Sparsha/Fashion-Store.git",
     },
   ];
   

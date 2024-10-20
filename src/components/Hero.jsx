@@ -1,6 +1,7 @@
 import {motion} from 'framer-motion';
 import {styles} from '../styles';
 import {ComputersCanvas} from './canvas';
+import { resume } from '../assets';
 
 import dp from '../assets/dp.svg'; // Assuming dp.svg is in the assets folder
 
@@ -16,7 +17,7 @@ const Hero = () => {
           <div className="w-0.5 sm:h-80 h-60 bg-[#763af7]" />
         </div>
 
-        {/* Description and Image */}
+        {/* Description and Image and Resume */}
         <div className="flex flex-col md:flex-row md:items-center gap-5">
           {/* Text Section */}
           <div className="order-2 md:order-1">
@@ -29,6 +30,16 @@ const Hero = () => {
               focusing on designing efficient APIs, <br className="sm:block hidden" /> database structures, and 
               deploying applications to various platforms.
             </p>
+            {/* CV Download Button */}
+            <div className="mt-5 flex justify-center md:justify-start">
+              <a
+                href= {resume}  // Path to the CV file in the public folder
+                download="Krishanu_Kabir_CV.pdf"  // File name for the download
+                className="bg-gradient-to-r from-[#763af7] to-[#a47bfd] hover:from-[#a47bfd] hover:to-[#763af7] text-white font-bold py-2 px-6 rounded-full shadow-lg hover:shadow-2xl transition-transform duration-300 transform hover:scale-105"
+              >
+                Download CV
+              </a>
+            </div>
           </div>
 
           {/* Profile Picture */}
@@ -41,10 +52,11 @@ const Hero = () => {
           </div>
         </div>
       </div>
+
       
       
       <div className='flex transform -translate-y-16 ' >
-        <ComputersCanvas/>
+        {/* <ComputersCanvas/> */}
       </div>
 
       <div className='absolute xs:bottom-8 bottom-30 w-full flex justify-center items-center'>
