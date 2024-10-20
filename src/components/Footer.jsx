@@ -63,11 +63,7 @@ const Footer = () => {
           <div className="flex flex-col items-center md:items-start">
             <h3 className="text-lg font-bold mb-3">Quick Links</h3>
             <ul className="text-sm leading-relaxed">
-              {/* <li>
-                <a href="#projects" className="hover:text-[#fffaeb]">
-                  Projects
-                </a>
-              </li> */}
+              
               <li>
                 <a href="#about" className="hover:text-[#fffaeb]">
                   About Me
