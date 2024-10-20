@@ -81,7 +81,7 @@ const Footer = () => {
               <li>
                 <a
                   href="/cv.pdf"
-                  download="Krishanu_Kabir_CV.pdf"
+                  download="Krishanu_Kabir_Resume.pdf"
                   className="hover:text-[#fffaeb]"
                 >
                   Download CV
