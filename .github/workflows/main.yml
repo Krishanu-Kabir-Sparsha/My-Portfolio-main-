@@ -29,25 +29,11 @@ jobs:
           npm install
           npm run build
 
-      # Step to test DNS resolution
-      - name: Test DNS resolution
-        run: |
-          nslookup ${{ secrets.ftp_server }}
-
-      # Add Retry logic and Timeout handling
-      - name: Retry FTP Deploy
-        uses: devmasx/timeout-action@v1
-        with:
-          timeout_seconds: 30
-          interval_seconds: 10
-          max_retries: 3
-
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.1.0
         with:
-          server: ${{ secrets.ftp_server }}  # You can replace this with IP address if DNS issue persists
+          server: ${{ secrets.ftp_server }}
           username: ${{ secrets.ftp_name }}
           password: ${{ secrets.ftp_password }}
           dangerous-clean-slate: true
           local-dir: ./dist/
-          timeout: 60000  # Increase timeout to 60 seconds
