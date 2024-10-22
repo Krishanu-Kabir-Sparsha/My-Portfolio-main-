@@ -31,11 +31,11 @@ const Hero = () => {
               deploying applications to various platforms.
             </p>
             {/* CV Download Button */}
-            <div className="mt-5 flex justify-center md:justify-start">
+            <div className="mt-5 w-full flex justify-start md:justify-start">
               <a
-                href= {resume}  // Path to the CV file in the public folder
-                download="Krishanu_Kabir_CV.pdf"  // File name for the download
-                className="bg-gradient-to-r from-[#763af7] to-[#a47bfd] hover:from-[#a47bfd] hover:to-[#763af7] text-white font-bold py-2 px-6 rounded-full shadow-lg hover:shadow-2xl transition-transform duration-300 transform hover:scale-105"
+                href={resume} // Path to the CV file in the public folder
+                download="Krishanu_Kabir_CV.pdf" // File name for the download
+                className="bg-gradient-to-r from-[#763af7] to-[#a47bfd] hover:from-[#a47bfd] hover:to-[#763af7] text-white font-bold py-2 px-4 md:px-6 rounded-full shadow-lg hover:shadow-2xl transition-transform duration-300 transform hover:scale-105 text-sm md:text-base"
               >
                 Download CV
               </a>
@@ -55,29 +55,28 @@ const Hero = () => {
 
       
       
-      <div className='flex transform -translate-y-16 ' >
-        {/* <ComputersCanvas/> */}
-      </div>
+      {/* <div className='flex transform -translate-y-16 ' >
+        <ComputersCanvas/>
+      </div> */}
 
-      <div className='absolute xs:bottom-8 bottom-30 w-full flex justify-center items-center'>
-        <a href="#about">
-          <div className='w-[28px] h-[52px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
-            <motion.div
-              animate={{
-                y: [0,24,0]
-              }}
-              transition={{
-                duration: 1.5,
-                repeat: Infinity,
-                repeatType: 'loop'
-              }}
-              className='w-3 h-3 rounded-full bg-secondary mb-1'
-            />
+        <div className='absolute bottom-8 sm:bottom-10 w-full flex justify-center items-center'>
+          <a href="#about">
+            <div className='w-[28px] h-[52px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
+              <motion.div
+                animate={{
+                  y: [0, 24, 0]
+                }}
+                transition={{
+                  duration: 1.5,
+                  repeat: Infinity,
+                  repeatType: 'loop'
+                }}
+                className='w-3 h-3 rounded-full bg-secondary mb-1'
+              />
+            </div>
+          </a>
+        </div>
 
-          </div>
-        </a>
-
-      </div>
 
       
       
